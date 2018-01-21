@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.*
+-->
+<html>
+    <head>
+        <title>PLUSPAGE Registracija ni uspela</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+
+table{
+    position: static;
+    background: #BDBDBD;
+    opacity: 0.9;
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: medium;
+    color: white;
+}            
+            
+#neuspelo {
+    width: 400px;
+    height: 100px;
+    font-size: 22px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    background: #BDBDBD;
+    border-top-left-radius: 2em;
+    border-bottom-left-radius: 2em;
+    border-top-right-radius: 2em;
+    border-bottom-right-radius: 2em;
+    border-radius: 5px;
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    position: static;
+}
+
+            
+ *{
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background: url(sandpaper.jpg);
+}
+
+#telo {
+    max-width: 1500px;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -65px;
+}
+
+#push {
+    height: 60px;
+}
+
+#footer {
+    height: 65px;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    position: fixed;
+    background: #82B3D9;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    bottom:0;
+}
+#pozdrav {
+    width: 100%;
+    height: 100px;
+    clear: both;
+    position: static;
+}
+
+#jeziki {
+    height: 25px;
+    width: 84px;
+    background: white;
+    position: relative;
+    float: right;
+    margin-right: 0px;
+    margin-top: 0px;
+}
+
+#tabela {
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    clear: both;
+    padding: 5px;
+}
+
+
+#Registracija {
+    height: 55px;
+    width: 550px;
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    position: static;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    background: #686868;
+    border-top-left-radius: 2em;
+    border-bottom-left-radius: 2em;
+    border-top-right-radius: 2em;
+    border-bottom-right-radius: 2em;
+    border-radius: 5px;
+}
+
+#submit {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: medium;
+    color: white;
+    background: #448DC5;
+    border-color: #82B3D9;
+    border-top-left-radius: 2em;
+    border-bottom-left-radius: 2em;
+    border-top-right-radius: 2em;
+    border-bottom-right-radius: 2em;
+    border-radius: 5px;
+    height: 40px;
+    width: 180px;
+}
+
+a {
+    font-size: small;
+    color: #E8E8E8;
+}
+
+#locilo {
+    height: 10px;
+    width: 100%;
+    position: static;
+}
+
+#morajo {
+    font-size: small;
+}
+
+#rojstvo {
+    text-align: center;
+}
+
+#polje {
+    margin-left: auto;
+    margin-right: auto;
+    position: static;
+    margin-top: 0px;
+    clear: both;
+    text-align: center;
+}
+
+#GumbZaPiskotke {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: medium;
+    color: white;
+    background: #448DC5;
+    border-color: #82B3D9;
+    border-top-left-radius: 2em;
+    border-bottom-left-radius: 2em;
+    border-top-right-radius: 2em;
+    border-bottom-right-radius: 2em;
+    border-radius: 5px;
+    z-index: -1;
+}
+
+#piskotki {
+    height: 20px;
+    margin-top: 70px;
+    margin-left: 30px;
+    width: 1000px;
+    color: white;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: medium;
+}
+
+
+        </style>
+    </head>
+    <body>
+         <script>
+             function regi() {
+            var prazna='';
+            var ime= document.getElementById("ime").value;
+            var priimek= document.getElementById("priimek").value;
+            var upime = document.getElementById("UpIme").value;
+            var geslo = document.getElementById("geslo").value;
+            var drugogeslo = document.getElementById("ponovnogeslo").value;
+            var email = document.getElementById("mail").value;
+            
+            var dan= document.getElementById("dan").value;
+            var mesec= document.getElementById("mesec").value;
+            var leto= document.getElementById("leto").value;
+            if(document.getElementById("moski").checked){var spol="moski";
+            }else{var spol="zenski";}
+            
+              if(ime == prazna) {alert("Vsa polja morajo biti polna!");}else{
+                  if(priimek == prazna) {alert("Vsa polja morajo biti polna!");}else{
+                      if(upime == prazna) {alert("Vsa polja morajo biti polna!");}else{
+                          if(geslo == prazna) {alert("Vsa polja morajo biti polna!");}else{
+                              if(email == prazna) {alert("Vsa polja morajo biti polna!");}else{
+            if(isAsciiOnli(ime)==false){alert ("Posebni znaki niso dovoljeni!");}else{
+                if(isAsciiOnli(priimek)==false){alert ("Posebni znaki niso dovoljeni!");}else{
+                    if(isAsciiOnli(upime)==false){alert ("Posebni znaki niso dovoljeni!");}else{
+                        if(isAsciiOnli(geslo)==false){alert ("Posebni znaki niso dovoljeni!");}else{
+                            if(isAsciiOnli(email)==false){alert ("Posebni znaki niso dovoljeni!");}else{
+                if(ime.indexOf('%')!==-1){alert ("Znak % ni dovoljen!");}else{
+                   if(priimek.indexOf('%')!==-1){alert ("Znak % ni dovoljen!");}else{
+                       if(upime.indexOf('%')!==-1){alert ("Znak % ni dovoljen!");}else{
+                           if(geslo.indexOf('%')!==-1){alert ("Znak % ni dovoljen!");}else{
+                                    if(geslo != drugogeslo) {alert("Gesli se ne ujemata!");}else{
+                                        if(email.indexOf('%')!==-1){alert ("Znak % ni dovoljen!");}else{
+                                            if(email.indexOf('@')===-1){alert ("Znak @ je obvezen za email!");}else{
+                                             
+                       document.getElementById("Podatki").value= ime+"%"+priimek+"%"+email+"%"+upime+"%"+geslo+"%"+dan+"."+mesec+"."+leto+"%"+spol;
+            document.getElementById("form").submit();}}}}}}}}}}}}}}}}}
+            
+        }
+        function isAsciiOnli(str) {
+    for (var i = 0; i < str.length; i++)
+        if (str.charCodeAt(i) > 127)
+            return false;
+    return true;
+}
+     
+
+    
+
+     
+    </script>
+       <div id="telo">
+       
+           <div id="pozdrav"><a href="/"><img src="krajsi.png" alt="logo"></a></div>
+
+
+           <div id="neuspelo"><p><br> Registracija ni uspela. <br> 
+                Prosimo poskusite ponovno.</p></div>
+
+
+<div id="Registracija"><p>Registracija</p></div>
+
+<table id="polje" style="width: 550px; height: 550px">
+    <tr>
+        <td><p>Ime*</p></td>
+        <td><input id="ime" name="Ime" size="30"></td>
+    </tr>
+    <tr>
+        <td><p>Priimek*</p></td>
+        <td><input id="priimek" name="Priimek" size="30"></td>
+    </tr>
+    <tr>
+        <td><p>Uporabniško Ime*</p></td>
+        <td><input id="UpIme" name="Uporabniško Ime" size="30"></td>
+    </tr>
+    <tr>
+        <td><p>Geslo*</p></td>
+        <td><input id="geslo" name="Geslo" type="password" size="30"></td>
+    </tr>
+    <tr>
+        <td><p>Potrdite geslo*</p></td>
+        <td><input id="ponovnogeslo" name="PonovnoGeslo" type="password" size="30"></td>
+    </tr>
+    <tr>
+        <td><p>E-Mail*</p></td>
+        <td><input id="mail" name="E-Mail" size="30"></td>
+    </tr>
+    <tr>
+        <td><p>Spol*</p></td>
+        <td><p>Moški: <input id="moski" name="Moški" type="radio" value="Moški" onclick="document.getElementById('zenski').checked=false" checked >      Ženski: <input id="zenski" name="Ženski" type="radio" value="Ženski" onclick="document.getElementById('moski').checked=false"></p></td>
+    </tr>
+    <tr>
+        <td><p>Datum Rojstva*</p></td>
+
+        <td><p id="rojstvo"> Dan:
+        <select id="dan" name="Dan" size="1">
+
+
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+<option>6</option>
+<option>7</option>
+<option>8</option>
+<option>9</option>
+<option>10</option>
+<option>11</option>
+<option>12</option>
+<option>13</option>
+<option>14</option>
+<option>15</option>
+<option>16</option>
+<option>17</option>
+<option>18</option>
+<option>19</option>
+<option>20</option>
+<option>21</option>
+<option>22</option>
+<option>23</option>
+<option>24</option>
+<option>25</option>
+<option>26</option>
+<option>27</option>
+<option>28</option>
+<option>29</option>
+<option>30</option>
+<option>31</option>
+</select>
+      Mesec:
+<select id="mesec" name="Mesec" size="1">
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+<option>6</option>
+<option>7</option>
+<option>8</option>
+<option>9</option>
+<option>10</option>
+<option>11</option>
+<option>12</option>
+</select>
+      Leto:
+      <select name="" size="1" id="leto">
+      <option>2015</option>
+      <option>2014</option>
+      <option>2013</option>
+      <option>2012</option>
+      <option>2011</option>
+      <option>2010</option>
+      <option>2009</option>
+      <option>2008</option>
+      <option>2007</option>
+      <option>2006</option>
+      <option>2005</option>
+      <option>2004</option>
+      <option>2003</option>
+      <option>2002</option>
+      <option>2001</option>
+      <option>2000</option>
+      <option>1999</option>
+      <option>1998</option>
+      <option>1997</option>
+      <option>1996</option>
+      <option>1995</option>
+      <option>1994</option>
+      <option>1993</option>
+      <option>1992</option>
+      <option>1991</option>
+      <option>1990</option>
+      <option>1989</option>
+      <option>1988</option>
+      <option>1987</option>
+      <option>1986</option>
+      <option>1985</option>
+      <option>1985</option>
+      <option>1983</option>
+      <option>1982</option>
+      <option>1981</option>
+      <option>1980</option>
+      <option>1979</option>
+      <option>1978</option>
+      <option>1977</option>
+      <option>1976</option>
+      <option>1975</option>
+      <option>1974</option>
+      <option>1973</option>
+      <option>1972</option>
+      <option>1971</option>
+      <option>1970</option>
+      <option>1969</option>
+      <option>1968</option>
+      <option>1967</option>
+      <option>1966</option>
+      <option>1965</option>
+      <option>1964</option>
+      <option>1963</option>
+      <option>1962</option>
+      <option>1961</option>
+      <option>1960</option>
+      <option>1959</option>
+      <option>1958</option>
+      <option>1957</option>
+      <option>1956</option>
+      <option>1955</option>
+      <option>1954</option>
+      <option>1953</option>
+      <option>1952</option>
+      <option>1951</option>
+      <option>1950</option>
+      <option>1949</option>
+      <option>1948</option>
+      <option>1947</option>
+      <option>1946</option>
+      <option>1945</option>
+      <option>1944</option>
+      <option>1943</option>
+      <option>1942</option>
+      <option>1941</option>
+      <option>1940</option>
+      <option>1939</option>
+      <option>1938</option>
+      <option>1937</option>
+      <option>1936</option>
+      <option>1935</option>
+      <option>1934</option>
+      <option>1933</option>
+      <option>1932</option>
+      <option>1931</option>
+      <option>1930</option>
+      <option>1929</option>
+      <option>1928</option>
+      <option>1927</option>
+      <option>1926</option>
+      <option>1925</option>
+      <option>1924</option>
+      <option>1923</option>
+      <option>1922</option>
+      <option>1921</option>
+      <option>1920</option>
+      <option>1919</option>
+      <option>1918</option>
+      <option>1917</option>
+      <option>1916</option>
+      <option>1915</option>
+      <option>1914</option>
+      <option>1913</option>
+      <option>1912</option>
+      <option>1911</option>
+      <option>1910</option>
+      <option>1909</option>
+      <option>1908</option>
+      <option>1907</option>
+      <option>1906</option>
+      <option>1905</option>
+      <option>1904</option>
+      <option>1903</option>
+      <option>1902</option>
+      <option>1901</option>
+      <option>1900</option>
+      </select> 
+
+
+</p></td>
+
+    </tr>
+
+    <tr>
+    <td id="reg"><form action="/registracija1" id ="form" method="POST">
+            <input onClick="regi();" id="submit" name="Submit" type="submit" value="Registriraj se!">
+            <input type ="hidden" name="Podatki" id ="Podatki" >
+            </form></td>
+    <td><p id="morajo">Polja označena z * morajo biti izpolnjena.</p><a href="/Raziskovalna%20Naloga.html">Zakaj potrebujemo te podatke?</a></td>
+    </tr>
+
+</table>
+
+<div id="push"></div>
+</div>
+<br/>
+<br/>
+<br/>
+<br/><br/>
+<br/>
+<br/>
+<br/><br/>
+<br/>
+<br/>
+<br/>
+
+<div id="footer">
+    <div id="piskotki">Za boljše delovanje tega portala uporabljamo piškotke. Z uporabo se z njimi strinjate.
+     <input type="button" value="Strinjam se!" id="GumbZaPiskotke" onClick="document.getElementById('piskotki').style.visibility='hidden';"></input> </div>
+<div id=jeziki><a><img src="nemska.jpg" alt="nem"></a><a><img src="britanska.jpg" alt="ang"></a></div>
+</div> 
+</body>
+</html>

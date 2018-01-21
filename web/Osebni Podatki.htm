@@ -1,0 +1,208 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+  <title>Osebni podatki</title>
+  <style type="text/css">
+
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background: url(sandpaper.jpg);
+}
+
+#telo {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -85px;
+}
+
+#push {
+    height: 80px;
+}
+
+#footer {
+    width: 100%;
+    height: 85px;
+    margin-left: 0;
+    margin-right: 0;
+    background: #82B3D9;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    position: fixed;
+}
+#pozdrav {
+    width: 100%;
+    height: 100px;
+    clear: both;
+    position: static;
+}
+
+#jeziki {
+    height: 25px;
+    width: 84px;
+    background: white;
+    position: relative;
+    float: right;
+    margin-right: 0px;
+    margin-top: 0px;
+}
+
+#podatki {
+    float:left;
+    position: absolute;
+    margin-left: 65px;
+    margin-top: 220px;
+    background: #BDBDBD;
+    opacity: 0.9;
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    font-family: Kozuka Gothic Pr6N L;
+    font-size: medium;
+    color: white;
+    padding: 5px;
+    z-index: -1;
+}
+
+#DesnoZgoraj {
+    float: right;
+    margin-top: 30px;
+}
+
+#mojespletnestrani {
+    float: right;
+    margin-right: 100px;
+    margin-top: 120px;
+    clear: right;
+    background: #BDBDBD;
+    opacity: 0.9;
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    font-family: Kozuka Gothic Pr6N L;
+    font-size: 25px;
+    color: white;
+    text-align: left
+}
+
+#slika {
+    float:left;
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 180px;
+    background: #FF8080;
+    opacity: 0.9;
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    padding: 2px;
+    z-index: 0;
+}
+
+#dodaj {
+    float: right;
+    position: static;
+    margin-right: 0px;
+    margin-top: 151px;
+    height: 45px;
+    width: 170px;
+    background: #8F8F8F;
+    opacity: 0.9;
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    font-family: Kozuka Gothic Pr6N L;
+    font-size: medium;
+    color: white;
+}
+
+#GumbZaPiskotke {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: medium;
+    color: white;
+    background: #448DC5;
+    border-color: #82B3D9;
+    border-top-left-radius: 2em;
+    border-bottom-left-radius: 2em;
+    border-top-right-radius: 2em;
+    border-bottom-right-radius: 2em;
+    border-radius: 5px;
+    z-index: -1;
+}
+
+#piskotki {
+    height: 20px;
+    margin-top: 70px;
+    margin-left: 30px;
+    width: 1000px;
+    color: white;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: medium;
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+<div id="telo">
+
+    <div id="pozdrav"><a href="/proba.html"><img src="krajsi.png" alt="logo"></a></div>
+
+
+<div id="slika" style="width: 150px; height: 120px" ></div>
+
+<table id="podatki" style="width: 300px; height: 200px" >
+    <tr>
+       <td></td>
+       <td id="DesnoZgoraj"><p>Uporabniško ime</p></td>
+    </tr>
+    <tr>
+       <td></td>
+       <td></td>
+    </tr>
+    <tr>
+       <td></td>
+       <td></td>
+    </tr>
+</table>
+
+<div id="mojespletnestrani" style="width: 600px; height: 250px">
+<table style="width: 600px; height: 250px">
+    <tr>
+        <td id="naslov" style="height: 30px"><p>Spremljate te strani:</p></td>
+    </tr>
+    <tr>
+        <td><input id="dodaj" name="Dodaj" type="button" value="Dodajte jih več!"></td>
+    </tr>
+</table>
+</div>
+
+<div id="push"></div>
+</div>
+
+
+<div id="footer">
+    <div id="piskotki">Za boljše delovanje tega portala uporabljamo piškotke. Z uporabo se z njimi strinjate.
+     <input type="button" value="Strinjam se!" id="GumbZaPiskotke"></input> </div>
+<div id=jeziki><a><img src="nemska.jpg" alt="nem"></a><a><img src="britanska.jpg" alt="ang"></a></div>
+</div> 
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>Domača stran</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%
+}
+
+table{
+    position: static;
+    background: #BDBDBD;
+    opacity: 0.9;
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: medium;
+    color: white;
+}
+
+#tabela {
+    margin-top: 80px;
+    margin-right: 40px;
+    float: right;
+    clear: both;
+    padding: 5px;
+}
+
+body {
+    background: url(sandpaper.jpg);
+}
+
+#telo {
+    min-height: 100%;
+    max-width: 1500px;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -115px;
+}
+
+#footer, #push {
+    height: 110px;
+}
+
+#footer {
+    height: 115px;
+    position: fixed;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    background: none;
+    background: #82B3D9;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+
+#GumbZaVpis {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: medium;
+    color: white;
+    background: #448DC5;
+    border-color: #82B3D9;
+    border-top-left-radius: 2em;
+    border-bottom-left-radius: 2em;
+    border-top-right-radius: 2em;
+    border-bottom-right-radius: 2em;
+    border-radius: 5px;
+}
+
+
+#GumbZaReg {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: medium;
+    color: white;
+    background: #448DC5;
+    border-color: #82B3D9;
+    border-top-left-radius: 2em;
+    border-bottom-left-radius: 2em;
+    border-top-right-radius: 2em;
+    border-bottom-right-radius: 2em;
+    border-radius: 5px;
+}
+
+#pozdrav {
+    width: 100%;
+    height: 100px;
+    clear: both;
+    position: static;
+}
+
+#jeziki {
+    height: 25px;
+    width: 84px;
+    background: white;
+    position: relative;
+    float: right;
+    margin-right: 0px;
+    margin-top: 90px;
+}
+
+#priporocamo {
+    float: right;
+    margin-right:15px;
+    margin-top: 20px;
+    height: 500px;
+    width: 290px;
+    clear: right;
+}
+
+#napis {
+    height: 40px;
+    width: 290px;
+    background: #949494;
+    opacity: 0.9;
+    border-top-left-radius: 0.25em;
+    border-top-right-radius: 0.25em;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 30px;
+    color: white;
+    margin-bottom: 460px;
+    text-align: center;
+}
+
+
+</style>
+</head>
+
+<body>
+    <script>function vpis() {
+        var uporabniskoime = document.getElementById("uporabniskoime").value ;
+        var geslo = document.getElementById("geslo").value;
+        
+        if(uporabniskoime.indexOf('%')!==-1){
+            alert ("Znak % ni dovoljen!");
+        
+        }else{
+            if(geslo.indexOf('%')!==-1){
+            alert ("Znak % ni dovoljen!");
+        
+            }else{document.cookie= "login="+uporabniskoime+"%"+geslo;
+            window.location.href='/onlogin';}}
+        }</script>
+
+<div id="telo">
+
+    <div id="pozdrav"> <a href="/proba.html"> <img src="krajsi.png" alt="logo"> </a> </div>
+
+<table style="text-align: left; width: 330px; height: 220px;" id="tabela">
+
+<tbody>
+
+<tr>
+<td style="width: 150px;">Uporabniško ime:</td>
+<td style="width: 170px;"><input name="UpIme" id="uporabniskoime" value=""></td>
+</tr>
+
+<tr>
+<td style="width: 150px;">Geslo</td>
+<td style="width: 170px;"><input name="Geslo" id="geslo" type="password"></td>
+</tr>
+
+<tr>
+<td style="width: 150px;"></td>
+<td style="width: 170px;"><input onClick='vpis();' id="GumbZaVpis" name="Vpis" value="Vpis" type="submit"></td>
+</tr>
+
+<tr>
+<td style="width: 150px;">Še niste naš uporabnik?</td>
+<td style="width: 170px;"><input name="Registracija" value="Registrirajte se!" type="button" id="GumbZaReg" onClick="window.location.href='/si_registracija.htm';"></td>
+</tr>
+</tbody>
+
+</table>
+
+
+
+
+
+<div id="push"></div>
+</div>
+
+
+
+
+<div id="footer">
+    <div id="jeziki"><a><img src="nemska.jpg" alt="nem"></a><a><img src="britanska.jpg" alt="ang"></a></div>
+</div>
+</body>
+</html>
