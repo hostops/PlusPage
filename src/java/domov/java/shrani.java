@@ -164,7 +164,7 @@ int idklobasa=0;
             int idid[]=new int[1000];
          String updatezabarvo="";
          
-    Connection conn = DriverManager.getConnection("jdbc:mysql://pluspage.heliohost.org:3306/jackyyes_pluspage","jackyyes_yes","geslo123");
+    Connection conn = DriverManager.getConnection("jdbc:mysql://plus-page:3306/plus-page","jakob","geslo123");
         Statement statement = conn.createStatement();
         
         ResultSet cursor = statement.executeQuery("SELECT ID, IME, PRIIMEK, EMAIL, UPORABNIK, GESLO, DATUMROJSTVA, SPOL, NASLOV, X, Y, XN, YN,VISINA,SIRINA,NOVOOKNO, SCROLLING, POVECAVA FROM UPORABNIKI");
