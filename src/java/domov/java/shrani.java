@@ -158,13 +158,13 @@ int k = 0;
     
 //delo z bazo
             try {
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("com.mysql.pass1234.Driver");
 int idklobasa=0;
         int idstevec = 0;
             int idid[]=new int[1000];
          String updatezabarvo="";
          
-    Connection conn = DriverManager.getConnection("jdbc:mysql://plus-page:3306/plus-page","jakob","geslo123");
+    Connection conn = DriverManager.getConnection("pass1234:mysql://plus-page:3306/plus-page","jakob","geslo123");
         Statement statement = conn.createStatement();
         
         ResultSet cursor = statement.executeQuery("SELECT ID, IME, PRIIMEK, EMAIL, UPORABNIK, GESLO, DATUMROJSTVA, SPOL, NASLOV, X, Y, XN, YN,VISINA,SIRINA,NOVOOKNO, SCROLLING, POVECAVA FROM UPORABNIKI");

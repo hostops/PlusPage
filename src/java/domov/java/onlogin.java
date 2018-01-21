@@ -61,7 +61,7 @@ piskotpodatek[0] = request.getParameter("Uporabnik");
         int idstevec = 0;
             
            
-    Connection conn = DriverManager.getConnection("jdbc:mysql://plus-page:3306/plus-page","jakob","geslo123");
+    Connection conn = DriverManager.getConnection("jdbc:mysql://plus-page:3306/plus-page","jakob","pass1234");
         Statement statement = conn.createStatement();
         ResultSet cursor = statement.executeQuery("SELECT ID, IME, PRIIMEK, EMAIL, UPORABNIK, GESLO, DATUMROJSTVA, SPOL, NASLOV, X, Y, XN, YN,VISINA,SIRINA,NOVOOKNO, SCROLLING FROM UPORABNIKI");
        
