@@ -1,5 +1,8 @@
 
 # PlusPage
+![GitHub](https://img.shields.io/github/license/jakobhostnik/pluspage.svg)
+![Maintenance](https://img.shields.io/maintenance/no/2014.svg)  
+
 My first web application.
 In the second year of high school me and my schoolmates created PlusPage - a personal dashboard page, which was similar to dead iGoogle.  
 Now I renewed it - Just for fun.   
